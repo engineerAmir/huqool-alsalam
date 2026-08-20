@@ -1,17 +1,19 @@
 :root {
-  --green-900: #0f3b2d;
-  --green-800: #174d3d;
-  --green-700: #1d654d;
-  --green-600: #1d8a5d;
-  --green-500: #19a86a;
-  --green-100: #eaf6ef;
-  --beige-100: #f8f3ea;
-  --beige-200: #efe1c4;
+  --green-900: #072d1d;
+  --green-800: #0d4e39;
+  --green-700: #0e6b45;
+  --green-600: #1e8f5a;
+  --green-500: #2fa669;
+  --green-100: #eaf8ef;
+  --gold-500: #e6d04d;
+  --gold-400: #f0dd6c;
+  --beige-100: #f8f4eb;
+  --beige-200: #efe6cf;
   --cream: #fffdf8;
-  --dark: #112017;
-  --muted: #4b5c52;
+  --dark: #0b1d17;
+  --muted: #4a5a52;
   --white: #ffffff;
-  --shadow: 0 18px 40px rgba(11, 35, 27, 0.12);
+  --shadow: 0 18px 40px rgba(9, 31, 22, 0.14);
   --radius: 24px;
 }
 
@@ -55,9 +57,9 @@ img {
   top: 0;
   z-index: 2000;
   backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid rgba(18, 32, 23, 0.06);
-  box-shadow: 0 10px 24px rgba(12, 32, 20, 0.04);
+  background: rgba(7, 45, 29, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 24px rgba(7, 45, 29, 0.18);
 }
 
 .nav-wrap {
@@ -71,20 +73,15 @@ img {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: var(--green-900);
-  font-weight: 800;
-  font-size: 1.25rem;
+  justify-content: center;
+  min-width: 150px;
 }
 
-.brand-mark {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--green-100), #dff5e9);
-  box-shadow: inset 0 0 0 1px rgba(29, 101, 77, 0.08);
+.brand-logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 8px 18px rgba(7, 45, 29, 0.12));
 }
 
 .nav {
@@ -94,10 +91,10 @@ img {
 }
 
 .nav a {
-  color: var(--dark);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-size: 0.98rem;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity 0.25s ease;
 }
 
@@ -124,13 +121,13 @@ img {
 
 .btn-primary {
   color: var(--white);
-  background: linear-gradient(135deg, var(--green-600), var(--green-500));
-  box-shadow: 0 14px 32px rgba(25, 168, 106, 0.28);
+  background: linear-gradient(135deg, var(--green-700), var(--green-500));
+  box-shadow: 0 14px 32px rgba(22, 119, 78, 0.28);
 }
 
 .btn-secondary {
   color: var(--green-900);
-  background: linear-gradient(135deg, #f4fbf6, #edf8ee);
+  background: linear-gradient(135deg, #f9f5de, #f8e88b);
   box-shadow: inset 0 0 0 1px rgba(31, 122, 84, 0.08);
 }
 
@@ -349,9 +346,9 @@ img {
 
 .section-tag {
   display: inline-block;
-  background: #edf8f1;
+  background: #ebf9ef;
   color: var(--green-800);
-  border: 1px solid rgba(29, 138, 93, 0.12);
+  border: 1px solid rgba(14, 107, 69, 0.12);
   border-radius: 999px;
   padding: 0.45rem 1rem;
   font-weight: 800;
@@ -398,7 +395,7 @@ img {
   place-items: center;
   font-size: 2rem;
   border-radius: 18px;
-  background: linear-gradient(135deg, var(--green-100), #dff5e9);
+  background: linear-gradient(135deg, #eafaf0, #dff0d0);
   margin-bottom: 16px;
 }
 
@@ -509,7 +506,7 @@ img {
   height: 54px;
   border-radius: 16px;
   color: var(--white);
-  background: linear-gradient(135deg, var(--green-700), var(--green-500));
+  background: linear-gradient(135deg, var(--green-800), var(--green-500));
   font-weight: 800;
   font-size: 1.3rem;
   margin-bottom: 18px;
@@ -578,10 +575,10 @@ img {
   min-height: 60px;
   padding: 0 1.1rem;
   border-radius: 18px;
-  background: linear-gradient(135deg, #19a86a, #0f8c4d);
+  background: linear-gradient(135deg, var(--green-500), var(--green-700));
   color: var(--white);
   font-weight: 800;
-  box-shadow: 0 18px 30px rgba(25, 168, 106, 0.33);
+  box-shadow: 0 18px 30px rgba(22, 119, 78, 0.33);
 }
 
 .reveal {
